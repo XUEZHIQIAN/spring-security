@@ -1,0 +1,11 @@
+package com.cherry.security;
+import com.cherry.security.model.People;
+
+dialect  "java"
+
+rule "girl"
+    when
+        $p : People(sex == 0 && drlType == "people")
+    then
+        System.out.println($p.getName() + "是女孩");
+end
