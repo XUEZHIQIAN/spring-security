@@ -1,5 +1,6 @@
 package com.cherry.security.config;
 
+import com.cherry.security.mapper.UserMapper;
 import com.cherry.security.model.People;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -13,6 +14,7 @@ import org.kie.api.builder.ReleaseId;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.kie.internal.io.ResourceFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -89,7 +91,7 @@ public class KiaSessionConfig {
 
         People people = new People();
         people.setName("Hang");
-        people.setSex(0);
+        people.setSex(1);
         people.setDrlType("people");
 
         KieSession kieSession = kieSession();

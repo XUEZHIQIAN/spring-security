@@ -19,9 +19,9 @@ public class People {
         this.drlType = drlType;
     }
 
-    private int sex;
-
     private String name;
+
+    private int sex;
 
     private String drlType;
 

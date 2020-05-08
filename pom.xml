@@ -46,6 +46,20 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!--mybatis-->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>2.1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.49</version>
+			<scope>runtime</scope>
+		</dependency>
+
 		<!-- drools依赖 -->
 		<dependency>
 			<groupId>org.drools</groupId>
@@ -114,16 +128,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<!--<finalName>ForestBlog</finalName>
-		<resources>
-			<resource>
-				<directory>src/main/java</directory>
-				<includes>
-					<include>**/*.*</include>
-				</includes>
-				<filtering>true</filtering>
-			</resource>
-		</resources>-->
 	</build>
 
 </project>
